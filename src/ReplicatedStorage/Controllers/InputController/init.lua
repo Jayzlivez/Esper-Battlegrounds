@@ -5,16 +5,17 @@ local ReplicatedStorage = game:GetService('ReplicatedStorage')
 
 --// Knit
 local Knit = require(ReplicatedStorage.Packages.Knit)
+local Keyboard = require(Knit.Util.Input).Keyboard
 
 --// Controller
-local EnemyController = Knit.CreateController { Name = "EnemyController" }
+local InputController = Knit.CreateController { Name = "InputController" }
 
 --// Variables
-function EnemyController:KnitInit()
+function InputController:KnitInit()
     
 end
 
-function EnemyController:KnitStart()
+function InputController:KnitStart()
     -------------Variables-----------
     
     -------------Variables-----------
@@ -26,4 +27,4 @@ function EnemyController:KnitStart()
     -----------Initialize------------
 end
 
-return EnemyController
+return InputController

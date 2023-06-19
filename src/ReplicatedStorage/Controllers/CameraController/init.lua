@@ -11,7 +11,7 @@ local CameraController = Knit.CreateController { Name = "CameraController" }
 
 --// Variables
 function CameraController:KnitInit()
-    
+    self.CameraSubject = "Humanoid"
 end
 
 function CameraController:KnitStart()
